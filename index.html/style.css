@@ -1,41 +1,72 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #0b3d91; /* Deep blue background */
+    color: white;
+    text-align: center;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
 }
 
+/* Header */
 header {
-    background-color: #333;
-    color: white;
+    background: #ffcc00; /* Bright yellow */
+    padding: 20px;
+    color: #0b3d91;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Player Section */
+.players {
+    padding: 30px;
+}
+
+.players h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Player Cards */
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
-h1, h2 {
-    color: #333;
-}
-
-#about img {
-    width: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-.project {
+.player-card {
     background: white;
-    margin: 20px auto;
-    padding: 10px;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #0b3d91;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.player-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Player Images */
+.player-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ffcc00;
+}
+
+/* Footer */
 footer {
-    background: #333;
-    color: white;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background: #ffcc00;
+    padding: 15px;
+    color: #0b3d91;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
 }
